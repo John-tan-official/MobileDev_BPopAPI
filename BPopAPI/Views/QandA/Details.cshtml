@@ -1,0 +1,66 @@
+﻿@model BPopAPI.Models.QandA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QandA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Question)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Question)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Answer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
